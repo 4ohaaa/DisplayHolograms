@@ -1,0 +1,37 @@
+# Сообщения DisplayHolograms
+# Поддержка формата MiniMessage: https://docs.advntr.dev/minimessage/format.html
+
+prefix: "<gold>[DisplayHolograms]</gold> "
+
+no-permission: "<red>У вас нет прав на выполнение этой команды!</red>"
+player-only: "<red>Эту команду могут использовать только игроки.</red>"
+invalid-usage: "<red>Использование: /dish <create|edit|remove|move|movehere|teleport|list|reload> [аргументы]</red>"
+hologram-not-found: "<red>Голограмма '<id>' не найдена!</red>"
+
+create-usage: "<red>Использование: /dish create <id> <текст></red>"
+create-success: "<green>Голограмма '<id>' успешно создана!</green>"
+
+edit-usage: "<red>Использование: /dish edit <id> <новый текст></red>"
+edit-success: "<green>Голограмма '<id>' обновлена!</green>"
+
+remove-usage: "<red>Использование: /dish remove <id></red>"
+remove-success: "<yellow>Голограмма '<id>' удалена!</yellow>"
+
+move-usage: "<red>Использование: /dish move <id> <x> <y> <z></red>"
+move-success: "<green>Голограмма '<id>' перемещена!</green>"
+move-invalid-coords: "<red>Некорректные координаты!</red>"
+
+movehere-usage: "<red>Использование: /dish movehere <id></red>"
+movehere-success: "<green>Голограмма '<id>' перемещена к вам!</green>"
+
+teleport-usage: "<red>Использование: /dish teleport <id></red>"
+teleport-success: "<green>Вы телепортированы к голограмме '<id>'!</green>"
+
+reload-success: "<green>Плагин успешно перезагружен!</green>"
+
+# Сообщения для списка (pagination)
+list-header: "<gold>=== Список голограмм (Страница <page>/<max_pages>) ===</gold>"
+list-item: "<gray>- <white><display_id></white> <dark_gray>(<tp_btn>)</dark_gray></gray>"
+list-footer: "<gold>===========================================</gold>"
+list-empty: "<yellow>Список голограмм пуст.</yellow>"
+list-invalid-page: "<red>Некорректный номер страницы!</red>"

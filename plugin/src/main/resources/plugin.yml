@@ -1,0 +1,9 @@
+name: DisplayHolograms
+version: '${version}'
+main: me.coha.displayholograms.DisplayHologramsPlugin
+api-version: '1.21'
+author: 4oha
+commands:
+  dish:
+    permission: displayholograms.admin
+    aliases: [hologram]
