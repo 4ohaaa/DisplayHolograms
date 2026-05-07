@@ -28,6 +28,51 @@
 2. Поместите его в папку `plugins` вашего сервера.
 3. Перезапустите сервер.
 
+## Подключение (JitPack)
+
+Если вы разработчик и хотите использовать API плагина, добавьте репозиторий JitPack и зависимость в ваш проект.
+
+### Gradle (Kotlin DSL)
+```kotlin
+repositories {
+    maven { url = uri("https://jitpack.io") }
+}
+
+dependencies {
+    compileOnly("com.github.4ohaaa:DisplayHolograms:1.0")
+}
+```
+
+### Gradle (Groovy)
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly 'com.github.4ohaaa:DisplayHolograms:1.0'
+}
+```
+
+### Maven
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.4ohaaa</groupId>
+        <artifactId>DisplayHolograms</artifactId>
+        <version>1.0</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+```
+
 ## Для разработчиков (API)
 
 Для интеграции с плагином используйте `DisplayHologramsAPI`.
